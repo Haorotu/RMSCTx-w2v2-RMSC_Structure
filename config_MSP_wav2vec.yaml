@@ -1,0 +1,52 @@
+# Unit duration in seconds for one audio segment.
+#unit_sec: 0.95
+#unit_sec: 3.19
+# FFT parameters.
+sample_rate: 16000
+n_fft: 512
+win_length: 512
+hop_length: 260
+n_mels: 64
+#f_min: 60
+#f_max: 7800
+# Dimensions of feature representations.
+feature_d: 2048
+# BYOL parameters.
+proj_size: 256
+proj_dim: 2048
+ema_decay: 0.99
+# Training parameters.
+seed: 38
+batch_size: 8
+lr: 0.00001
+epochs: 60
+#gpus: 1
+#num_workers: 0
+# Weight pathname for resuming training.
+#resume:
+# Shape of loh-mel spectrogram [F, T].
+#shape: [64, 96]
+#shape: [64, 100]
+# Folder to store trained weight files.
+#checkpoint_folder: checkpoints
+root_files: '/home/yanlecun/w2v2-how-to/dataset/Linux_msp_process.csv'
+model_type: 'wav2vec2.0'
+loss_type: 'MSE'
+augmentation: 'None'
+#num: 1
+#pretrain_path: '/nas/student/gPhD_Tianhao/acoustic_scene_classification_add_ser/pretrain/Cnn10_mAP=0.380.pth'
+#pretrain_path: '/nas/student/gPhD_Tianhao/models_path/SER_cnn10kong_finetune_model_190.pt'
+emo_nums: 1
+filename: 'emo_classification_test'
+gpu_nums: 1
+experiments: 1
+#data_type: 1D
+#finetune_type: 'Partial(fc1)'
+#finetune_type: 'Global'
+#scaling_factor_n: 1
+#chunk_number_c: 11
+#chunk_length_m: 16000
+#point: 20
+#mode: '2'
+#index: 1
+#Loss_Mode: 1
